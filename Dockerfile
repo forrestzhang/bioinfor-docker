@@ -32,7 +32,7 @@ ADD https://github.com/broadinstitute/picard/releases/download/1.139/picard-tool
 ADD https://ccb.jhu.edu/software/tophat/downloads/tophat-2.1.0.Linux_x86_64.tar.gz /opt/software/
 ADD http://cole-trapnell-lab.github.io/cufflinks/assets/downloads/cufflinks-2.2.1.Linux_x86_64.tar.gz /opt/software/
 ADD https://github.com/BenLangmead/bowtie2/releases/download/v2.2.6/bowtie2-2.2.6-linux-x86_64.zip /opt/software/
-ADD http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.5.4-1/sratoolkit.2.5.4-1-ubuntu64.tar.gz /opt/software
+ADD http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.5.4-1/sratoolkit.2.5.4-1-ubuntu64.tar.gz /opt/software/
 
 WORKDIR /opt/software
 RUN unzip picard-tools-1.139.zip && mv picard-tools-1.139 picard

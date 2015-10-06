@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y build-essential \
 								  unzip \
 									python \
 									curl \
-									bedtools 
+									bedtools
 
 RUN mkdir /opt/software
 
@@ -46,3 +46,5 @@ RUN git clone https://github.com/lh3/bwa.git && cd bwa && make
 
 
 ENV PATH /opt/software/bowtie2:/opt/software/tophat:/opt/software/cufflinks:/opt/software/bwa:/opt/software/sratoolkit:$PATH
+
+ENV LANG en_US.UTF-8

@@ -17,7 +17,8 @@ RUN apt-get update && apt-get install -y build-essential \
 								  samtools \
 								  unzip \
 									python \
-									curl
+									curl \
+									bedtools 
 
 RUN mkdir /opt/software
 
